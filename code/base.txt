@@ -1,0 +1,6 @@
+0.9
+CUGCGGCUUUGGCUCUAGCC
+....((((........))))
+0.8563
+--pause-sites 10=1 8=1
+

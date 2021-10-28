@@ -10,8 +10,6 @@ for x in f:
 	else:
 		meta.append(x.split(" "))
 
-meta[4] = meta[4].split(" ")
-print(meta)
 # save pausing sides
 pause = []
 for i in range(1,len(meta[4])):
@@ -89,9 +87,11 @@ if new_ratio >= float(meta[0]):
 # add new pausing side
 meta[4].append(str(new_pause)+"=1")
 meta[4] = ' '.join(meta[4])
+print("ready")
 # write to base.txt
 with open('base.txt', 'w') as f:
-	f.writelines(str(line) + "\n" for line in meta)
+	f.writelines(str(line) + "\n" for line in meta[0:4])
+	f.writelines(meta[4])
 
 
 

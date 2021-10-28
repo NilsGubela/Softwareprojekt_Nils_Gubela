@@ -2,5 +2,4 @@
 CUGCGGCUUUGGCUCUAGCC
 ....((((........))))
 0.8563
---pause-sites 10=1 8=1
-
+--pause-sites 10=1 9=1 17=1

@@ -1,0 +1,56 @@
+CUGCGGCUUUGGCUCUAGCC ....((((........)))) 19
+CUGCGGCUUUGGCUCUAGCC ....((((........)))) 2
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU (((((((((.((......)).)))....))))))................ 0
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU ((((((....(((........)))....))))))................ 44
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU ((((((....(((........)))....))))))................ 33
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU ((((((....(((........)))....))))))................ 33
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU ((((((....(((........)))....))))))................ 33
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU ...((...))......((((((((.......))))))))........... 0 0
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU ...((...))......((((((((.......))))))))........... 0 0
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU (((((((((.((......)).)))....))))))................ 0 0
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU ............(((..(((((((.......))))))))))......... 0 0
+UGAGGCGGUUCUACGUGUUAACUACGAACCAGAUGACGACUACUCCCAAU ......(((((...((....))...))))).................... 0.8563 0
+UGAGGCGGUUCUACGUGUUAACUACGAACCAGAUGACGACUACUCCCAAU ......(((((((.((....)))).))))).................... 0 0
+UGAGGCGGUUCUACGUGUUAACUACGAACCAGAUGACGACUACUCCCAAU (((.(((......))).))).............................. 0.1437 0
+UGAGGCGGUUCUACGUGUUAACUACGAACCAGAUGACGACUACUCCCAAU .(((..(((((...((....))...)))))............)))..... 0 0
+UGAGGCGGUUCUACGUGUUAACUACGAACCAGAUGACGACUACUCCCAAU .(((..(((((((.((....)))).)))))............)))..... 0 0
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU (((((((((.((......)).)))....))))))................ 0 0
+CUAGUCCAACCAAUCCCGUGUUUGCCAUGAUUAGACGCGAUCCAACUUAU ((((((....(((........)))....))))))................ 0.1582 33
+GACACUCGAGAACUGCUACCUCAGUGAGGCAGCGUCAGCCAACUAAACUUUAAGCCAGUUUUCUUUGGCUUGGCGCAUUG ..((((.(((.........))))))).....(((((((((((..(((((.......)))))...)))))).))))).... 0.1749 33
+GACACUCGAGAACUGCUACCUCAGUGAGGCAGCGUCAGCCAACUAAACUUUAAGCCAGUUUUCUUUGGCUUGGCGCAUUG ..((((.(((.........))))))).....(((((((((((..(((((.......)))))...))))).)))))).... 1.0 76
+GACACUCGAGAACUGCUACCUCAGUGAGGCAGCGUCAGCCAACUAAACUUUAAGCCAGUUUUCUUUGGCUUGGCGCAUUG ..((((.(((.........))))))).....(((((((((((..(((((.......)))))..)).)))).))))).... 0 0
+GACACUCGAGAACUGCUACCUCAGUGAGGCAGCGUCAGCCAACUAAACUUUAAGCCAGUUUUCUUUGGCUUGGCGCAUUG ..((((.(((.........))))))).....(((((((((((..(((((.......)))))..)).))).)))))).... 0 0
+GACACUCGAGAACUGCUACCUCAGUGAGGCAGCGUCAGCCAACUAAACUUUAAGCCAGUUUUCUUUGGCUUGGCGCAUUG ....(((....((((......)))))))...(((((((((((..(((((.......)))))...)))))).))))).... 0 0
+GACACUCGAGAACUGCUACCUCAGUGAGGCAGCGUCAGCCAACUAAACUUUAAGCCAGUUUUCUUUGGCUUGGCGCAUUG ....(((....((((......)))))))...(((((((((((..(((((.......)))))...))))).)))))).... 0 0
+GACACUCGAGAACUGCUACCUCAGUGAGGCAGCGUCAGCCAACUAAACUUUAAGCCAGUUUUCUUUGGCUUGGCGCAUUG ..................((((...))))..(((((((((((..(((((.......)))))...)))))).))))).... 0.0081 33
+GACACUCGAGAACUGCUACCUCAGUGAGGCAGCGUCAGCCAACUAAACUUUAAGCCAGUUUUCUUUGGCUUGGCGCAUUG ..................((((...))))..(((((((((((..(((((.......)))))...))))).)))))).... 0 0
+GGACCAUACGGGACCAUACG ((.((.....)).))..... 0.5405 0
+GGACCAUACGGGACCAUACG ((.((....))..))..... 0.4595 0
+GGACCAUACGGGACCAUACG (..((....))..)...... 0 0
+GGACCAUACGGGACCAUACG ((.((.....)).))..... 0.5405 0
+GGACCAUACGGGACCAUACG ((.((....))..))..... 0.4595 0
+GGACCAUACGGGACCAUACG (..((....))..)...... 0 0
+GGUCGAUUAUGGGUGUCCCAUUCCCCCCUAUUGAUAAAGGGCACAGGUCGUUUCGGGUGUCUCCCCCCUCUUGAGGUUAU .((((((...(((.(.......).)))..))))))(((.(((....))).))).(((.....))).(((....))).... 0 0
+GGUCGAUUAUGGGUGUCCCAUUCCCCCCUAUUGAUAAAGGGCACAGGUCGUUUCGGGUGUCUCCCCCCUCUUGAGGUUAU .((((((...(((.(........))))..))))))(((.(((....))).))).(((.....))).(((....))).... 0 0
+GGUCGAUUAUGGGUGUCCCAUUCCCCCCUAUUGAUAAAGGGCACAGGUCGUUUCGGGUGUCUCCCCCCUCUUGAGGUUAU ((.((((((((((...)))))....((((........))))....)))))..))(((.....))).(((....))).... 1.0 65
+CUUGACGAGGGUGGCUGGGCAUGCGACCUUAGGAACGCCCUGUGCCUGCGUGAUGUAGAUAUAUUACGUCUUAGUACCUA .......((((((.(((((........)))).)..))))))((((..(((((((((....)))))))))....))))... 0 0
+CUUGACGAGGGUGGCUGGGCAUGCGACCUUAGGAACGCCCUGUGCCUGCGUGAUGUAGAUAUAUUACGUCUUAGUACCUA .......((((((.(((((........)))))...))))))((((..(((((((((....)))))))).)...))))... 0 0
+CUUGACGAGGGUGGCUGGGCAUGCGACCUUAGGAACGCCCUGUGCCUGCGUGAUGUAGAUAUAUUACGUCUUAGUACCUA ....(((.((((.((.((((...(........)...)))).)))))).)))(((((((.....))))))).......... 0 0
+CUUGACGAGGGUGGCUGGGCAUGCGACCUUAGGAACGCCCUGUGCCUGCGUGAUGUAGAUAUAUUACGUCUUAGUACCUA ........(((((.(((((((((((..(....)..)))...))))))(((((((((....)))))))))...))))))). 0 0
+CCCCCAUAUCGAGUCACCGUCUCGUUAGCUGACGUCUAGCUAUCCAGGGCCUAAGCUGAAGGCCACGGGGGA (((((....((((.......)))).((((((.....)))))).....(((((.......)))))..))))). 1.0 40
+CCCCCAUAUCGAGUCACCGUCUCGUUAGCUGACGUCUAGCUAUCCAGGGCCUAAGCUGAAGGCCACGGGGGA (((((.((.((((.......)))).))((((.....)))).......(((((.......)))))..))))). 0 0
+CCCCCAUAUCGAGUCACCGUCUCGUUAGCUGACGUCUAGCUAUCCAGGGCCUAAGCUGAAGGCCACGGGGGA (((((....((......)).((.(.((((((.....)))))).).))(((((.......)))))..))))). 0 0
+CCCCCAUAUCGAGUCACCGUCUCGUUAGCUGACGUCUAGCUAUCCAGGGCCUAAGCUGAAGGCCACGGGGGA (((((...............((.(.((((((.....)))))).).))(((((.......)))))..))))). 0 0
+CGACUGCAUCGAGUUAACCGUCUCGUCGACUGAACAUUAGUCGUCCAAUGGCCAAGUUCAGGCCAGCAGUCGAGGU (((((((..((((........)))).(((((((...))))))).....(((((.......)))))))))))).... 1.0 0
+CGACUGCAUCGAGUUAACCGUCUCGUCGACUGAACAUUAGUCGUCCAAUGGCCAAGUUCAGGCCAGCAGUCGAGGU (((((((...(((........)))(.(((((((...))))))).)...(((((.......)))))))))))).... 0 0
+CGACUGCAUCGAGUUAACCGUCUCGUCGACUGAACAUUAGUCGUCCAAUGGCCAAGUUCAGGCCAGCAGUCGAGGU (((((((...((........))..(.(((((((...))))))).)...(((((.......)))))))))))).... 0 0
+CGACUGCAUCGAGUUAACCGUCUCGUCGACUGAACAUUAGUCGUCCAAUGGCCAAGUUCAGGCCAGCAGUCGAGGU (((((((.................(.(((((((...))))))).)...(((((.......)))))))))))).... 0 0
+CGACUGCAUCGAGUUAACCGUCUCGUCGACUGAACAUUAGUCGUCCAAUGGCCAAGUUCAGGCCAGCAGUCGAGGU (((((((((.(((........)))))(((((((...))))))).....(((((.......)))))))))))).... 0 0
+CGACUGCAUCGAGUUAACCGUCUCGUCGACUGAACAUUAGUCGUCCAAUGGCCAAGUUCAGGCCAGCAGUCGAGGU (((((((..((.......))....(.(((((((...))))))).)...(((((.......)))))))))))).... 0 0
+CGACUGCAUCGAGUUAACCGUCUCGUCGACUGAACAUUAGUCGUCCAAUGGCCAAGUUCAGGCCAGCAGUCGAGGU (((((((..((((........))))....((((((.((.(((((...))))).))))))))....))))))).... 0 0
+CCCGGUAAUCGAGUCGACCUUCUCGUAGCCUGAAAAUUAGGCUCACAGCCUCCAAGCUAGGGAGGUACCGAGUGGU ..((((....(((........)))(((((((((...))))))).)).((((((.......))))))))))...... 0 0
+CCCGGUAAUCGAGUCGACCUUCUCGUAGCCUGAAAAUUAGGCUCACAGCCUCCAAGCUAGGGAGGUACCGAGUGGU ((((((...((((........)))).(((((((...)))))))....((((((.......))))))))))...)). 0 0
+CCCGGUAAUCGAGUCGACCUUCUCGUAGCCUGAAAAUUAGGCUCACAGCCUCCAAGCUAGGGAGGUACCGAGUGGU ((((((....(((........)))(((((((((...))))))).)).((((((.......))))))))))...)). 0 0
+GACAGCGUGUCCGAGCGGUUAAGGAGAUAGACUCGAAAUCUAUUAGGCAUUGCCUGCACAGGUUCGAAUCCUGUCGCUGUCG ((((((((.(((..........))).)((((.......)))).(((((...))))).(((((.......)))))))))))). 0 0
+GACAGCGUGUCCGAGCGGUUAAGGAGAUAGACUCGAAAUCUAUUAGGCAUUGCCUGCACAGGUUCGAAUCCUGUCGCUGUCG (((((((....(((((.(((.....))).).))))........(((((...))))).(((((.......)))))))))))). 0 0
+GACAGCGUGUCCGAGCGGUUAAGGAGAUAGACUCGAAAUCUAUUAGGCAUUGCCUGCACAGGUUCGAAUCCUGUCGCUGUCG (((((((..(((..........))).(((((.......)))))(((((...))))).(((((.......)))))))))))). 0 0

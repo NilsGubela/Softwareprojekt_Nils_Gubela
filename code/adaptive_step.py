@@ -1,7 +1,7 @@
 import RNA
 import random
 import subprocess
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 # function that transforms DrTransformer log into list
 def dr_list(filename):
@@ -68,66 +68,93 @@ for line in meta:
 		break
 	seq = line[0]
 	struc = line[1]
+	print("Structure "+struc+ " processing now")
 	n = len(seq)
 	step = 0
 	highscore = 0
 	best_pause = 0
+	possible_length = [5,10,20,50,100]
 
-	#alternative:
+	# lists to store the positions for pauses and the length
 	pause_list = []
-	pause_res = []
+	length_list = []
 	# adaptive walk for one seq struc pair
 	# stop after 2n tries for one pausing side -> exp to visit all sides twice
-	#while step <= 2*n:
+	while step <= 2*n:
 	# alternative:
-	while step < n:
+	#while step < n:
 
 		# select pausing side for step
-		#new_pause = random.randint(1,n)
+		new_pause = random.randint(10,n-5)
 		# alternative:
-		new_pause = step
+		#new_pause = step
 
-		# alternative:
-		#pause_len = random.randint(0,200)
+		for i in possible_length:
+			pause_len = i
 
-		if step == 0:
-			# call DrTransformer without pausing side, controll
-			# call DrTransformer with pausing side
-			subprocess.call(["echo "+seq+" | DrTransformer --logfile"], shell=True)
-		else:
-			# call DrTransformer with pausing side
-			subprocess.call(["echo "+seq+" | DrTransformer --logfile --pause-sites "+str(new_pause)+"="+str(pause_len)], shell=True)
+			if step == 0:
+				# call DrTransformer without pausing site, controll
+				subprocess.call(["echo "+seq+" | DrTransformer --logfile"], shell=True)
+				# read in list from DrTransformer logfile
+				liste = dr_list("NoName.log")
+				new_ratio = 0
+				# find structure rate at end of transcritption
+				for i in range(0,len(liste)):
+					if int(liste[i][0]) != n:
+						continue
 
-		# read in list from DrTransformer logfile
-		liste = dr_list("NoName.log")
-
-		# set new ratio to zero in case DrTransformer does not find strucutre
-		new_ratio = 0
-		# find structure rate at end of transcritption
-		for i in range(0,len(liste)):
-			if int(liste[i][0]) != n:
+					if liste[i][2] == struc:
+						new_ratio = float(liste[i][6])
+				# set highscore for all other calculations
+				highscore = new_ratio
+				# continue with new step
+				step = 1
 				continue
+			else:
+				# build call for pausing sites
+				pause_call = ""
+				if len(pause_list)>=1:
+					for l in range(len(pause_list)):
+						pause_call = pause_call + " "+str(pause_list[l])+"="+str(length_list[l])
+				pause_call = pause_call + " "+str(new_pause)+"="+str(pause_len)
+				# call DrTransformer with pausing site
+				subprocess.call(["echo "+seq+" | DrTransformer --logfile --pause-sites "+pause_call], shell=True)
 
-			if liste[i][2] == struc:
-				new_ratio = float(liste[i][6])
+			# read in list from DrTransformer logfile
+			liste = dr_list("NoName.log")
 
-		# evaluate step
-		if new_ratio > highscore:
-			best_pause = new_pause
-			highscore = new_ratio
-		#print(new_pause)
-		#print(new_ratio)
-		#print("\n")
-		pause_list.append(new_pause)
-		pause_res.append(new_ratio)
+			# set new ratio to zero in case DrTransformer does not find strucutre
+			new_ratio = 0
+			# find structure rate at end of transcritption
+			for i in range(0,len(liste)):
+				if int(liste[i][0]) != n:
+					continue
+
+				if liste[i][2] == struc:
+					new_ratio = float(liste[i][6])
+
+			# evaluate step
+			if new_ratio > highscore:
+				pause_list.append(new_pause)
+				length_list.append(pause_len)
+				highscore = new_ratio
+				break
+		
 		step += 1
+
+	# build call for pausing sites for printing
+	pause_call = ""
+	if len(pause_list)>=1:
+		for l in range(len(pause_list)):
+			pause_call = pause_call + " "+str(pause_list[l])+"="+str(length_list[l])
+	else:
+		pause_call = "no improvement found with pausing"
 
 	# save results
 	with open('result.txt', 'a+') as f:
-		f.writelines(seq + " "+ struc+ " "+str(highscore)+ " "+ str(best_pause) + "\n")
+		f.writelines(seq + " "+ struc+ " "+str(highscore)+ " "+ pause_call + "\n")
 
 	# save steps for later processing
-	with open('log/'+struc+'pause.txt', 'a+') as f:
-		for i in range(0, len(pause_list)):
-			f.writelines(str(pause_list[i]) + " " + str(pause_res[i])+"\n")
-
+	#with open('log/'+struc+'pause.txt', 'a+') as f:
+	#	for i in range(0, len(pause_list)):
+	#		f.writelines(str(pause_list[i]) + " " + str(pause_res[i])+"\n")

@@ -54,3 +54,14 @@ CCCGGUAAUCGAGUCGACCUUCUCGUAGCCUGAAAAUUAGGCUCACAGCCUCCAAGCUAGGGAGGUACCGAGUGGU (((
 GACAGCGUGUCCGAGCGGUUAAGGAGAUAGACUCGAAAUCUAUUAGGCAUUGCCUGCACAGGUUCGAAUCCUGUCGCUGUCG ((((((((.(((..........))).)((((.......)))).(((((...))))).(((((.......)))))))))))). 0 0
 GACAGCGUGUCCGAGCGGUUAAGGAGAUAGACUCGAAAUCUAUUAGGCAUUGCCUGCACAGGUUCGAAUCCUGUCGCUGUCG (((((((....(((((.(((.....))).).))))........(((((...))))).(((((.......)))))))))))). 0 0
 GACAGCGUGUCCGAGCGGUUAAGGAGAUAGACUCGAAAUCUAUUAGGCAUUGCCUGCACAGGUUCGAAUCCUGUCGCUGUCG (((((((..(((..........))).(((((.......)))))(((((...))))).(((((.......)))))))))))). 0 0
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ........(((......))).......... 0 
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ........(((......))).......... 1.0 
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ........(((......))).......... 1.0  16=5
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ........(((......))).......... 1.0 no improvement found with pausing
+AAAUGAUAAUGGAACUACAUAGGGACGCGA .............................. 0 no improvement found with pausing
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ...........(..((.....))..).... 0 no improvement found with pausing
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ..............((....))........ 0 no improvement found with pausing
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ..............((......))...... 0 no improvement found with pausing
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ..(((............))).......... 0 no improvement found with pausing
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ......((.((......))))......... 0 no improvement found with pausing
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ..(((.((.......))))).......... 0 no improvement found with pausing

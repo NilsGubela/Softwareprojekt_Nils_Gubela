@@ -9,7 +9,7 @@ def dr_list(filename):
 	f = open(filename, "r")
 
 	# build list from log file
-	saveSeq = 0
+	#saveSeq = 0
 	saveStep = 0
 	liste = []
 	for x in f:
@@ -17,18 +17,17 @@ def dr_list(filename):
 			break
 		if saveStep == 1:
 			liste.append(x.split(" "))
-		if saveSeq == 1:
-			seq = x[x.find(' ')+1:]
-			seq = seq[:-2]
-			n = len(seq)
-			saveSeq = 0
+		#if saveSeq == 1:
+		#	seq = x[x.find(' ')+1:]
+		#	seq = seq[:-2]
+		#	n = len(seq)
+		#	saveSeq = 0
 
-		if x.find("# >NoName") != -1:
-			saveSeq = 1
+		#if x.find("# >NoName") != -1:
+		#	saveSeq = 1
 
-		if x.find("# Tanscription Step") != -1:
+		if x.find("# Transcription Step") != -1:
 			saveStep = 1
-
 
 		# clean list
 	for i in range(0,len(liste)):
@@ -50,7 +49,7 @@ def dr_list(filename):
 
 
 # length of pause is set to 20 seconds
-pause_len = 100
+#pause_len = 100
 
 # obtain sequence and structure from base.txt
 # read in base file
@@ -70,8 +69,34 @@ for line in meta:
 	struc = line[1]
 	print("Structure "+struc+ " processing now")
 	n = len(seq)
+	# call DrTransformer without pausing site, controll
+	subprocess.call(["echo "+seq+" | DrTransformer --logfile"], shell=True)
+	# read in list from DrTransformer logfile
+	liste = dr_list("NoName.log")
+	new_ratio = 0
+	# find structure rate at end of transcritption
+	for i in range(0,len(liste)):
+		if int(liste[i][0]) != n:
+			continue
+
+		if liste[i][2] == struc:
+			new_ratio = float(liste[i][6])
+	# set highscore for all other calculations
+	highscore = new_ratio
+	# search for all steps with no structure alternative in the beginning
+	no_alt = 0
+	while no_alt < n:
+		if int(liste[no_alt][1]) == 1:
+			no_alt += 1
+		else:
+			break
+	
+	if no_alt == n:
+		print("There are no alternative structures possible")
+		continue
+
 	step = 0
-	highscore = 0
+	#highscore = 0
 	best_pause = 0
 	possible_length = [5,10,20,50,100]
 
@@ -80,12 +105,12 @@ for line in meta:
 	length_list = []
 	# adaptive walk for one seq struc pair
 	# stop after 2n tries for one pausing side -> exp to visit all sides twice
-	while step <= 2*n:
+	while step <= 2*(n-no_alt):
 	# alternative:
 	#while step < n:
 
 		# select pausing side for step
-		new_pause = random.randint(10,n-5)
+		new_pause = random.randint(no_alt,n-5)
 		# alternative:
 		#new_pause = step
 

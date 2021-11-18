@@ -65,3 +65,12 @@ AAAUGAUAAUGGAACUACAUAGGGACGCGA ..............((......))...... 0 no improvement f
 AAAUGAUAAUGGAACUACAUAGGGACGCGA ..(((............))).......... 0 no improvement found with pausing
 AAAUGAUAAUGGAACUACAUAGGGACGCGA ......((.((......))))......... 0 no improvement found with pausing
 AAAUGAUAAUGGAACUACAUAGGGACGCGA ..(((.((.......))))).......... 0 no improvement found with pausing
+AAAUGAUAAUGGAACUACAUAGGGACGCGA ........(((......))).......... 0 no improvement found with pausing
+AAAUGAUAAUGGAACUACAUAGGGACGCGA .............................. 0 no improvement found with pausing
+CUCGCGAACAGCCCCGUCUUAACCGAGUAUUGUUAACGGCGAUGACCACA ...((.....))..(((((((((........))))).))))......... 1.0 no improvement found with pausing
+CUCGCGAACAGCCCCGUCUUAACCGAGUAUUGUUAACGGCGAUGACCACA ..............(((((((((........))))).))))......... 0 no improvement found with pausing
+CUCGCGAACAGCCCCGUCUUAACCGAGUAUUGUUAACGGCGAUGACCACA ...((.....))(((((..((((........)))))))).)......... 0 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6484  46=50 45=10 51=50 49=20 42=50 45=50 52=20 50=50 44=20 55=50 41=50 51=100 41=100 44=50 52=50 45=100 52=100 49=50 50=100 54=50 42=100 49=100 48=50 46=100 43=5 43=50
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG .(((((((.......((((...(((........))).))))...........))))))). 0.2637 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG .((((((........)))))).(((........)))........................ 0.0908 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........)))))))...(((......)))..... 0 no improvement found with pausing

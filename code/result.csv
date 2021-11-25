@@ -1,0 +1,49 @@
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG,.........(((((....))))).....((((......))))........,0.6568,0.6568,no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG,.....(((((((((....))))........)))))...............,0.3432,0.3432,no improvement found with pausing
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,(((((....))))).(((...((((((...........))))))...))).........(((........)))..,0.678,0.9065, 44=5 50=5
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,(((((....))))).((((.((((...)))).(((.((..........))))).....))))..(((.....))),0.1138,0.1187, 44=5
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,(((((....))))).((((.((((...)))).(((.((..........))))).....))))..((.....))..,0.0967,0.1009, 44=5
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,(((((....))))).(((...((((((...........))))))...)))(((...............)))....,0.0699,0.0935, 44=5 50=5
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,(((((....))))).(((.(.((((((...........)))))).).))).........(((........)))..,0,0,no improvement found with pausing
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,.((((....))))(.(((.(.((((((...........)))))).).))).).......(((........)))..,0,0,no improvement found with pausing
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,.............(.(((.(.((((((...........)))))).).))).).......(((........)))..,0,0,no improvement found with pausing
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,(((((....))))).(((.(.((((((...........)))))).).)))(((...............)))....,0,0,no improvement found with pausing
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,(((((....))))).(((.(.((((((...........)))))).).)))(((......((...))..)))....,0,0,no improvement found with pausing
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,(((((....))))).(((.(.((((((...........)))))).).)))((......))....(((.....))),0,0,no improvement found with pausing
+UUCAUACGAAUGAGAGGUCCACAUAUGAUGUACGGAGGCAUAUGCGAACCCCGGAAUAGGCCAAGCGACGGGCGC,(((((....))))).(((.(.((((((...........)))))).).)))........(.((.......)).)..,0,0,no improvement found with pausing
+AUGUGAGCGGUUUGGCGAGAAAAUUGCGCACCACUUUAAGUCGAGCUACGAUCUCGAGCCAAGAGUCGAAGUAAG,..(((.(((((((.......))))))).))).(((((.(.((..(((.((....)))))...)).).)))))...,0,0,no improvement found with pausing
+AUGUGAGCGGUUUGGCGAGAAAAUUGCGCACCACUUUAAGUCGAGCUACGAUCUCGAGCCAAGAGUCGAAGUAAG,..(((.(((((((.......))))))).))).............(((.(((.(((.......)))))).)))...,0.8116,0.8116,no improvement found with pausing
+AUGUGAGCGGUUUGGCGAGAAAAUUGCGCACCACUUUAAGUCGAGCUACGAUCUCGAGCCAAGAGUCGAAGUAAG,..(((.(((((((.......))))))).))).(((((...(((((.......)))))....))))).........,0.1884,0.1884,no improvement found with pausing
+AUGUGAGCGGUUUGGCGAGAAAAUUGCGCACCACUUUAAGUCGAGCUACGAUCUCGAGCCAAGAGUCGAAGUAAG,....(((.(((...((((.....))))..))).)))........(((.(((.(((.......)))))).)))...,0,0,no improvement found with pausing
+CGAAUCCCUGAUCUAUAUUACGUUGAAGAUUUGGUGGCUAAUAGGGCUCCGAGUAUUUAGUGGGUUCUCCCUCGG,.((((((((((.................((((((.((((.....))))))))))..)))).))))))........,1.0,1.0,no improvement found with pausing
+CGAAUCCCUGAUCUAUAUUACGUUGAAGAUUUGGUGGCUAAUAGGGCUCCGAGUAUUUAGUGGGUUCUCCCUCGG,.((((((((((.................((((((.(.((....)).).))))))..)))).))))))........,0,0,no improvement found with pausing
+CGAAUCCCUGAUCUAUAUUACGUUGAAGAUUUGGUGGCUAAUAGGGCUCCGAGUAUUUAGUGGGUUCUCCCUCGG,.((((((((((.((.((......)).))((((((.((((.....))))))))))..)))).))))))........,0,0,no improvement found with pausing
+CGAAUCCCUGAUCUAUAUUACGUUGAAGAUUUGGUGGCUAAUAGGGCUCCGAGUAUUUAGUGGGUUCUCCCUCGG,.((((((((((((...........))..((((((.((((.....))))))))))..)))).))))))........,0,0,no improvement found with pausing
+CGAAUCCCUGAUCUAUAUUACGUUGAAGAUUUGGUGGCUAAUAGGGCUCCGAGUAUUUAGUGGGUUCUCCCUCGG,.((((((((((.((.((......)).))((((((.(.((....)).).))))))..)))).))))))........,0,0,no improvement found with pausing
+CGAAUCCCUGAUCUAUAUUACGUUGAAGAUUUGGUGGCUAAUAGGGCUCCGAGUAUUUAGUGGGUUCUCCCUCGG,.(((((((((((((.((......)).)))(((((.((((.....)))))))))...)))).))))))........,0,0,no improvement found with pausing
+CGAAUCCCUGAUCUAUAUUACGUUGAAGAUUUGGUGGCUAAUAGGGCUCCGAGUAUUUAGUGGGUUCUCCCUCGG,.(((((((((((((.((......)).))))((((.((((.....)))))))).....))).))))))........,0,0,no improvement found with pausing
+CGAAUCCCUGAUCUAUAUUACGUUGAAGAUUUGGUGGCUAAUAGGGCUCCGAGUAUUUAGUGGGUUCUCCCUCGG,.((((((((((((.((.....)).))..((((((.((((.....))))))))))..)))).))))))........,0,0,no improvement found with pausing
+CGAAUCCCUGAUCUAUAUUACGUUGAAGAUUUGGUGGCUAAUAGGGCUCCGAGUAUUUAGUGGGUUCUCCCUCGG,.((((((((((.................((((((.((((.....))))))))))..)))).)))))).((...)),0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,....((((((...................)))))).......(((((((((....)))..))))))((.(((....))).))........,0.8756,0.9065, 32=5
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,....((((((...................)))))).........((((.(((((((((.....))))))........))).)))).....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,....((((((...................)))))).......(((((((((....)))..))))))...(((....)))...........,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,....((((((...................)))))).......((((((.((......)).))))))((.(((....))).))........,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,....((((((...................)))))).........((((.(((((((((.....)))))........)))).)))).....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((...((........((((....).))).........))...))))))).))....(((((.(((....))).)).)))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((...((........((((....).))).........))...))))))).))....(((((.(((....))).).))))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((.............((((....).)))..............))))))).))....(((((.(((....))).)).)))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((.............((((....).)))..............))))))).))....(((((.(((....))).).))))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((.................((((.............))))..))))))).))....(((((.(((....))).)).)))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((.................((((.............))))..))))))).))....(((((.(((....))).).))))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((...((.((((..((.....))))))..........))...))))))).))....(((((.(((....))).)).)))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((...((.((((..((.....))))))..........))...))))))).))....(((((.(((....))).).))))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((...((........((((....).))).........))...))))))).))....(((((.(((....)))..)))))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((.............((((....).)))..............))))))).))....(((((.(((....)))..)))))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((.................((((.............))))..))))))).))....(((((.(((....)))..)))))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,....((((((...................)))))).......((((((.((......)).))))))...(((....)))...........,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((...((.((((..((.....))))))..........))...))))))).))....(((((.(((....)))..)))))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((...((.((((...........))))..........))...))))))).))....(((((.(((....))).)).)))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((...((.((((...........))))..........))...))))))).))....(((((.(((....))).).))))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((...((.....((.((((....).))).))......))...))))))).))....(((((.(((....))).)).)))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((...((.....((.((((....).))).))......))...))))))).))....(((((.(((....))).).))))....,0,0,no improvement found with pausing
+GCCGGAAGCCCAACCAAGCAUCGAACUACGGCUUCAAUUAAAACGUAACGCUUCUGCGCUUUAUGUAGACUCAUUUGAGCCUUACACUAC,(((((((((......((((..((.....))))))...............))))))).))....(((((.(((....))).)).)))....,0,0,no improvement found with pausing

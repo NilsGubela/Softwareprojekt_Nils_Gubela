@@ -74,3 +74,44 @@ AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((.
 AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG .(((((((.......((((...(((........))).))))...........))))))). 0.2637 no improvement found with pausing
 AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG .((((((........)))))).(((........)))........................ 0.0908 no improvement found with pausing
 AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........)))))))...(((......)))..... 0 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.647  49=50 52=10 50=50 42=20 41=50 45=50 54=10 48=50 47=20 43=50 51=50 40=10 44=50 46=20 53=50
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6455 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6458  54=50 52=10 49=50
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6455 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6455 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6455 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6455 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6455 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6455 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6455 no improvement found with pausing
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6458  50=50 51=10 53=50
+AUGUGCUUCAACCUUGGCGCAGGCCUUAAUAUCGGCACGUCUUCUUAAUAACAGGUACAG (((((((........(((....)))........))))))).................... 0.6458  44=50 45=10 46=50
+CAUUAAGACUCCCGGCGUUUCUACCCCAUU .............((.((....)).))... 0.6568 no improvement found with pausing
+CAUUAAGACUCCCGGCGUUUCUACCCCAUU .............((.((....)))).... 0.3432 no improvement found with pausing
+CAUUAAGACUCCCGGCGUUUCUACCCCAUU .............((........))..... 0 no improvement found with pausing
+CAUUAAGACUCCCGGCGUUUCUACCCCAUU .............................. 0 no improvement found with pausing
+CAUUAAGACUCCCGGCGUUUCUACCCCAUU .....((((.......)))).......... 0 no improvement found with pausing
+CAUUAAGACUCCCGGCGUUUCUACCCCAUU .....(((..(.....)..)))........ 0 no improvement found with pausing
+CAUUAAGACUCCCGGCGUUUCUACCCCAUU .............((.(.......)))... 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .........(((((....))))).....((((......))))........ 0.6568 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .....(((((((((....))))........)))))............... 0.3432 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG ....((((.(((((....))))).....((((......))))....)))) 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .....(((((((((....)))))........))))............... 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .........(((((....)))))..(((((.(((((....)))))))))) 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .((..(((((((((....))))........)))))..))........... 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG ..(((..(((.....))).)))......((((......))))........ 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .....((((((((....)))..........)))))............... 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG (((.(..((........))..).)))..((((......))))........ 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .((..(((((((((....)))))........))))..))........... 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .......(((.....)))..........((((......))))........ 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG ....(..((........))..)......((((......))))........ 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .........(((((....)))))...((((((......)))).))..... 0 no improvement found with pausing
+AAUAAGCGCCGUGAGUCUUAAUGUUCGGUUAACUCUUUAGUAUUAAUACCGAAGUCCGAGGACUAUCUCCCUAUCAGUCGUCGGGCCGACAAUGUCGCCA .....(((.(((..(((......((((((..................))))))((((((.((((...........)))).)))))).))).))).))).. 0.9977  29=5
+AAUAAGCGCCGUGAGUCUUAAUGUUCGGUUAACUCUUUAGUAUUAAUACCGAAGUCCGAGGACUAUCUCCCUAUCAGUCGUCGGGCCGACAAUGUCGCCA .....(((.(((..(((......((((((..................))))))((((((.((((((......)).)))).)))))).))).))).))).. 0 no improvement found with pausing
+AAUAAGCGCCGUGAGUCUUAAUGUUCGGUUAACUCUUUAGUAUUAAUACCGAAGUCCGAGGACUAUCUCCCUAUCAGUCGUCGGGCCGACAAUGUCGCCA .....(((.(((..(((......((((((..(((....)))......))))))((((((.((((...........)))).)))))).))).))).))).. 0 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .........(((((....))))).....((((......))))........ 0.6568 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .....(((((((((....))))........)))))............... 0.3432 no improvement found with pausing
+AAUAAGCGCCGUGAGUCUUAAUGUUCGGUUAACUCUUUAGUAUUAAUACCGAAGUCCGAGGACUAUCUCCCUAUCAGUCGUCGGGCCGACAAUGUCGCCA .....(((.(((..(((......((((((..................))))))((((((.((((...........)))).)))))).))).))).))).. 0.9977  29=5
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .........(((((....))))).....((((......))))........ 0.6568 no improvement found with pausing
+AGUUCGACCGCUCUACGGGGAGUAUUAACACGGUUAUAUGUGAUUUGUUG .....(((((((((....))))........)))))............... 0.3432 no improvement found with pausing
+AAUAAGCGCCGUGAGUCUUAAUGUUCGGUUAACUCUUUAGUAUUAAUACCGAAGUCCGAGGACUAUCUCCCUAUCAGUCGUCGGGCCGACAAUGUCGCCA .....(((.(((..(((......((((((..................))))))((((((.((((...........)))).)))))).))).))).))).. 0.9977  29=5

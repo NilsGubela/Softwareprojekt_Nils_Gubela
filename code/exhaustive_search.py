@@ -63,7 +63,7 @@ for x in f:
 	else:
 		meta.append(x.split(" "))
 
-# perform adaptive walk for all sequence structure pairs in base.txt
+# perform exhaustive search for all sequence structure pairs in base.txt
 for line in meta:
 	if line == " ":
 		break
@@ -85,6 +85,7 @@ for line in meta:
 			new_ratio = float(liste[i][6])
 	# set highscore for all other calculations
 	highscore = new_ratio
+	old_highscore = highscore
 	# search for all steps with no structure alternative in the beginning
 	no_alt = 0
 	while no_alt < n:
@@ -97,7 +98,7 @@ for line in meta:
 		print("There are no alternative structures possible")
 		continue
 
-	step = 1
+	step = 0
 	#highscore = 0
 	best_pause = 0
 	possible_length = [5,10,20,50,100]
@@ -108,13 +109,12 @@ for line in meta:
 	length_list = []
 	# adaptive walk for one seq struc pair
 	# stop after 2n tries for one pausing side -> exp to visit all sides twice
-	while step <= 2*(len(step_set)) and len(pause_list) < 3:
+	while step < len(step_set) and len(pause_list) < 3:
 	# alternative:
 	#while step < n:
 
 		# select pausing side for step
-		#new_pause = random.randint(no_alt,n-5)
-		new_pause = random.choice(step_set)
+		new_pause = step_set[step]
 
 		# check if equilibrium is reached
 		id = 0
@@ -169,7 +169,7 @@ for line in meta:
 				length_list.append(pause_len)
 				highscore = new_ratio
 				step_set.remove(new_pause)
-				step = 1
+				step = 0
 				break
 		
 		step += 1
@@ -183,8 +183,12 @@ for line in meta:
 		pause_call = "no improvement found with pausing"
 
 	# save results
-	with open('result.txt', 'a+') as f:
-		f.writelines(seq + " "+ struc+ " "+str(highscore)+ " "+ pause_call + "\n")
+	#with open('result.txt', 'a+') as f:
+	#	f.writelines(seq + " "+ struc+ " "+str(highscore)+ " "+ pause_call + "\n")
+	with open('result.csv', 'a+') as f:
+		# sequence/structure/old occupancy/new occupancy/pauses
+		f.writelines(seq + ","+ struc+ ","+str(old_highscore)+","+str(highscore)+ ","+ pause_call + "\n")
+	print(str(highscore)+ ","+ pause_call + "\n")
 
 	print("--- %s seconds ---" % (time.time() - start_time))
 

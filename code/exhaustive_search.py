@@ -67,6 +67,7 @@ for x in f:
 for line in meta:
 	if line == " ":
 		break
+	start_time = time.time()
 	seq = line[0]
 	struc = line[1]
 	print("Structure "+struc+ " processing now")

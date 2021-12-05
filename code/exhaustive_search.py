@@ -104,6 +104,12 @@ for line in meta:
 	best_pause = 0
 	possible_length = [5,10,20,50,100]
 	step_set = list(range(no_alt, n-5))
+	closest_dist = n # find closest structure if pause is not available
+	closest_call = 0
+	closest_pause = 0
+	closest_ratio = 0
+	closest_struc = ""
+	closest_length = 0
 
 	# lists to store the positions for pauses and the length
 	pause_list = []
@@ -118,7 +124,7 @@ for line in meta:
 		new_pause = step_set[step]
 
 		# check if equilibrium is reached
-		id = 0
+		id = new_pause - 1
 		step_Z_list = []
 		step_occupancy_list = []
 		while(id < n):
@@ -157,12 +163,19 @@ for line in meta:
 			# set new ratio to zero in case DrTransformer does not find strucutre
 			new_ratio = 0
 			# find structure rate at end of transcritption
-			for i in range(0,len(liste)):
+			for i in range(n-1,len(liste)):
 				if int(liste[i][0]) != n:
 					continue
 
 				if liste[i][2] == struc:
 					new_ratio = float(liste[i][6])
+					break 	
+				elif RNA.bp_distance(struc, liste[i][2]) < closest_dist:
+					closest_struc = liste[i][2]
+					closest_dist = RNA.bp_distance(struc, liste[i][2])
+					closest_ratio = float(liste[i][6])
+					closest_pause = new_pause
+					closest_length = pause_len
 
 			# evaluate step
 			if new_ratio > highscore:
@@ -172,6 +185,28 @@ for line in meta:
 				step_set.remove(new_pause)
 				step = 0
 				break
+
+
+			# check if equilibrium is reached after this pause site length
+			id = new_pause - 1
+			step_Z_list = []
+			step_occupancy_list = []
+			while(id < n):
+				if int(liste[id][0]) == new_pause:
+					step_Z_list.append(math.e**(-float(liste[id][6])/_RT))
+					step_occupancy_list.append(float(liste[id][6]))
+				if int(liste[id][0]) == new_pause + 1:
+					break
+				id +=1
+		
+			step_Z_list = np.array(step_Z_list)
+			step_occupancy_list = np.array(step_occupancy_list)
+
+			Z = sum(step_Z_list)
+			myp8 = np.array(step_Z_list/Z)
+			if(np.allclose(step_occupancy_list, myp8)):
+				break
+
 		
 		step += 1
 
@@ -180,15 +215,17 @@ for line in meta:
 	if len(pause_list)>=1:
 		for l in range(len(pause_list)):
 			pause_call = pause_call + " "+str(pause_list[l])+"="+str(length_list[l])
+			closest_call="NA,NA,NA,NA"
 	else:
 		pause_call = "no improvement found with pausing"
+		closest_call =str(closest_dist)+","+closest_struc+","+str(closest_pause)+"="+str(closest_length)+","+str(closest_ratio)
 
 	# save results
 	#with open('result.txt', 'a+') as f:
 	#	f.writelines(seq + " "+ struc+ " "+str(highscore)+ " "+ pause_call + "\n")
 	with open('result.csv', 'a+') as f:
-		# sequence/structure/old occupancy/new occupancy/pauses
-		f.writelines(seq + ","+ struc+ ","+str(old_highscore)+","+str(highscore)+ ","+ pause_call + "\n")
+		# sequence/structure/old occupancy/new occupancy/pauses/closest distance/closest structure/closest pause/closest occupancy
+		f.writelines(seq + ","+ struc+ ","+str(old_highscore)+","+str(highscore)+ ","+ pause_call +"," + closest_call + "\n")
 	print(str(highscore)+ ","+ pause_call + "\n")
 
 	print("--- %s seconds ---" % (time.time() - start_time))

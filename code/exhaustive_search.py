@@ -18,23 +18,23 @@ def dr_list(filename):
 	# build list from log file
 	#saveSeq = 0
 	saveStep = 0
+	saveEnd = 0
 	liste = []
+	liste_end = []
 	for x in f:
 		if x.find("# Distribution") != -1:
-			break
-		if saveStep == 1:
-			liste.append(x.split(" "))
-		#if saveSeq == 1:
-		#	seq = x[x.find(' ')+1:]
-		#	seq = seq[:-2]
-		#	n = len(seq)
-		#	saveSeq = 0
-
-		#if x.find("# >NoName") != -1:
-		#	saveSeq = 1
-
+			saveEnd = 1
+			continue
 		if x.find("# Transcription Step") != -1:
 			saveStep = 1
+			continue
+		if x.find("#") != -1:
+			continue
+		if saveStep == 1:
+			liste.append(x.split(" "))
+		if saveEnd == 1:
+			liste_end.append(x.split(" "))
+
 
 		# clean list
 	for i in range(0,len(liste)):
@@ -45,7 +45,16 @@ def dr_list(filename):
 			if liste[i][j].find('\n') != -1:
 				liste[i][j] = liste[i][j][:-1]
 
-	return(liste)
+			# clean list_end
+	for i in range(0,len(liste_end)):
+		liste_end[i] = list(filter(None, liste_end[i]))
+		for j in range(0,len(liste_end[i])):
+			if liste_end[i][j].find(']') != -1:
+				liste_end[i][j] = liste_end[i][j][:-1]
+			if liste_end[i][j].find('\n') != -1:
+				liste_end[i][j] = liste_end[i][j][:-1]
+
+	return(liste, liste_end)
 
 
 
@@ -75,15 +84,12 @@ for line in meta:
 	# call DrTransformer without pausing site, controll
 	subprocess.call(["echo "+seq+" | DrTransformer --logfile"], shell=True)
 	# read in list from DrTransformer logfile
-	liste = dr_list("NoName.log")
+	liste, liste_end = dr_list("NoName.log")
 	new_ratio = 0
 	# find structure rate at end of transcritption
-	for i in range(0,len(liste)):
-		if int(liste[i][0]) != n:
-			continue
-
-		if liste[i][2] == struc:
-			new_ratio = float(liste[i][6])
+	for i in range(0,len(liste_end)):
+		if liste_end[i][2] == struc:
+			new_ratio = float(liste_end[i][6])
 	# set highscore for all other calculations
 	highscore = new_ratio
 	old_highscore = highscore
@@ -158,22 +164,19 @@ for line in meta:
 			subprocess.call(["echo "+seq+" | DrTransformer --logfile --pause-sites "+pause_call], shell=True)
 
 			# read in list from DrTransformer logfile
-			liste = dr_list("NoName.log")
+			liste, liste_end = dr_list("NoName.log")
 
 			# set new ratio to zero in case DrTransformer does not find strucutre
 			new_ratio = 0
 			# find structure rate at end of transcritption
-			for i in range(n-1,len(liste)):
-				if int(liste[i][0]) != n:
-					continue
-
-				if liste[i][2] == struc:
-					new_ratio = float(liste[i][6])
+			for i in range(0,len(liste_end)):
+				if liste_end[i][2] == struc:
+					new_ratio = float(liste_end[i][6])
 					break 	
-				elif RNA.bp_distance(struc, liste[i][2]) < closest_dist:
-					closest_struc = liste[i][2]
-					closest_dist = RNA.bp_distance(struc, liste[i][2])
-					closest_ratio = float(liste[i][6])
+				elif RNA.bp_distance(struc, liste_end[i][2]) < closest_dist:
+					closest_struc = liste_end[i][2]
+					closest_dist = RNA.bp_distance(struc, liste_end[i][2])
+					closest_ratio = float(liste_end[i][6])
 					closest_pause = new_pause
 					closest_length = pause_len
 
@@ -188,16 +191,16 @@ for line in meta:
 
 
 			# check if equilibrium is reached after this pause site length
-			id = new_pause - 1
+			#id = new_pause - 1
 			step_Z_list = []
 			step_occupancy_list = []
-			while(id < n):
-				if int(liste[id][0]) == new_pause:
-					step_Z_list.append(math.e**(-float(liste[id][6])/_RT))
-					step_occupancy_list.append(float(liste[id][6]))
-				if int(liste[id][0]) == new_pause + 1:
+			for id in range(0, len(liste_end)):
+				if int(liste_end[id][0]) == new_pause:
+					step_Z_list.append(math.e**(-float(liste_end[id][6])/_RT))
+					step_occupancy_list.append(float(liste_end[id][6]))
+				if int(liste_end[id][0]) == new_pause + 1:
 					break
-				id +=1
+				
 		
 			step_Z_list = np.array(step_Z_list)
 			step_occupancy_list = np.array(step_occupancy_list)

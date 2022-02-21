@@ -11,6 +11,7 @@ parser = argparse.ArgumentParser()
 # obtain values of command line flags
 parser.add_argument("-m", "--mode", dest = "mode" ,help="Either adaptive walk or exhaustive search", default = "adaptive", type = str)
 parser.add_argument("-i", "--input", dest ="file", help="Name of file that contains sequence structure pairs", type = str)
+parser.add_argument("-o", "--output", dest ="output", help="Name of output file", type = str, default = "result")
 #additional arguments of DrTransformer
 parser.add_argument("--o-prune", dest = "prune", help=" Occupancy threshold to prune structures from the network. The structures with lowest occupancy are removed until at most o-prune occupancy has been removed from the total population. (default: 0.05)", default = 0.05, type = float)
 parser.add_argument("-T", "--temp", dest = "temp", help=" Rescale energy parameters to a temperature of temp C. (default: 37.0)",default = 37.0, type=float)
@@ -19,6 +20,7 @@ args = parser.parse_args()
 
 mode = args.mode
 file_name = args.file
+output_name = args.output
 prune = args.prune
 temp = args.temp
 
@@ -42,10 +44,10 @@ def dr_list(filename):
 		if x.find("# Distribution") != -1:
 			saveEnd = 1
 			continue
-		if x.find("# Transcription Step") != -1:
+		if x.find("# Tanscription Step") != -1:
 			saveStep = 1
 			continue
-		if x.find("#") != -1:
+		if x.find("# ") != -1:
 			continue
 		if saveStep == 1:
 			liste.append(x.split(" "))
@@ -109,7 +111,7 @@ for line in meta:
 	subprocess.call(["echo "+seq+" | DrTransformer --logfile"  + " --o-prune " + str(prune) + " -T " + str(temp)], shell=True)
 	# read in list from DrTransformer logfile
 	liste, liste_end = dr_list("NoName.log")
-	
+
 	# find structure rate at end of transcritption
 	new_ratio = 0
 	for i in range(0,len(liste_end)):
@@ -258,9 +260,12 @@ for line in meta:
 		closest_call =str(closest_dist)+","+closest_struc+","+str(closest_pause)+"="+str(closest_length)+","+str(closest_ratio)
 
 	# save results
-	with open('result.csv', 'a+') as f:
+	with open(output_name+".csv", 'a+') as f:
 		# sequence/structure/old occupancy/new occupancy/pauses/closest distance/closest structure/closest pause/closest occupancy
 		f.writelines(seq + ","+ struc+ ","+str(old_highscore)+","+str(highscore)+ ","+ pause_call +"," + closest_call + "\n")
 	print(str(highscore)+ ","+ pause_call + "\n")
+
+	# clean rep
+	subprocess.call(["rm NoName.drf NoName.log"], shell=True)
 
 	print("--- %s seconds ---" % (time.time() - start_time))

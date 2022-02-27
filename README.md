@@ -11,7 +11,7 @@ The pausing site finding algorithm takes a list of sequence structure pairs as i
 ```
 The generated csv file contains additional information such as the initial occupancy of the strucutre, the increased occupancy of the structure and in case the structure is not observable in the DrTransformer output it will list the closest observable structure w.r.t. base pair distance.
 
-Please contact the [developer documentation](https://github.com/bad-ants-fleet/ribolands/tree/development) of the [project report](https://github.com/bad-ants-fleet/ribolands/tree/development) for further information.
+Please contact the developer documentation (/docs/dev_doc.pdf) of the project report (/docs/report.pdf) for further information.
 
 ## Flags
 
